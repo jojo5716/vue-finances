@@ -1,6 +1,6 @@
 import componentConfig from './core';
 
 export default {
-  name: 'HomePage',
+  name: 'AboutPage',
   ...componentConfig,
 };
