@@ -1,16 +1,29 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import homePageActions from '../pages/Home/store/actions';
+import homePageActions from '../pages/Home/store';
+import aboutPageActions from '../pages/About/store';
+
+const actions = {
+  ...homePageActions.actions,
+  ...aboutPageActions.actions,
+};
+
+const state = {
+  ...homePageActions.state,
+  ...aboutPageActions.state,
+};
+
+const mutations = {
+  ...homePageActions.mutations,
+  ...aboutPageActions.mutations,
+};
 
 Vue.use(Vuex);
 
-// const homePageActions =
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {
-    ...homePageActions,
-  },
+  state,
+  mutations,
+  actions,
   modules: {},
 });

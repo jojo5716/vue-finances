@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
-const LOAD_ABOUT_PAGE_DATA = (state, homeData) => {
-  state.data = homeData;
+const LOAD_ABOUT_PAGE_DATA = (state, aboutData) => {
+  state.data = aboutData;
 };
 
 export default {

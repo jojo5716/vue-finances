@@ -1,4 +1,4 @@
-import store from '../store';
+import store from '../../../store';
 
 import computed from './computed';
 import props from './props';
