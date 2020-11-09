@@ -10,6 +10,6 @@ export default {
   methods,
   store,
   beforeMount() {
-    this.$store.dispatch('fetchAboutData', this.endpoints?.urls?.getHomeData);
+    this.$store.dispatch('fetchSettingData', this.endpoints?.urls?.getHomeData);
   },
 };
